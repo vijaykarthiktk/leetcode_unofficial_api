@@ -25,7 +25,7 @@ class LeetCodeAPI {
   LeetCodeAPI._internal();
 
   static Future<void> initializeApp(String? username) async {
-    if(username != null){
+    if (username != null) {
       if (await _checkUserExist(username)) {
         _username = username;
         isInitialized = true;
@@ -47,7 +47,7 @@ class LeetCodeAPI {
     }
   }
 
-  Future<UserData?> userData({String? username }) async {
+  Future<UserData?> userData({String? username}) async {
     assert(isInitialized, throw LeetCodeAPIException(100));
     return await fetchUserDetails<UserData>(
       username: username ?? _username,
@@ -55,7 +55,7 @@ class LeetCodeAPI {
     );
   }
 
-  Future<LanguagesAndProblemCounts?> languageStats({String? username }) async {
+  Future<LanguagesAndProblemCounts?> languageStats({String? username}) async {
     assert(isInitialized, throw LeetCodeAPIException(100));
 
     return await fetchUserDetails<LanguagesAndProblemCounts>(
@@ -64,7 +64,7 @@ class LeetCodeAPI {
     );
   }
 
-  Future<LCBadges?> userBadges({String? username }) async {
+  Future<LCBadges?> userBadges({String? username}) async {
     assert(isInitialized, throw LeetCodeAPIException(100));
 
     return await fetchUserDetails<LCBadges>(
@@ -73,7 +73,7 @@ class LeetCodeAPI {
     );
   }
 
-  Future<LCBadge?> userActiveBadge({String? username }) async {
+  Future<LCBadge?> userActiveBadge({String? username}) async {
     assert(isInitialized, throw LeetCodeAPIException(100));
 
     return await fetchUserDetails<LCBadge>(
@@ -82,7 +82,8 @@ class LeetCodeAPI {
     );
   }
 
-  Future<Submissions?> recentSubmissions({String? username, int limit = 20}) async {
+  Future<Submissions?> recentSubmissions(
+      {String? username, int limit = 20}) async {
     assert(isInitialized, throw LeetCodeAPIException(100));
 
     return await fetchUserDetails<Submissions>(
@@ -92,7 +93,7 @@ class LeetCodeAPI {
     );
   }
 
-  Future<SubmitStats?> solvedProblemCount({String? username }) async {
+  Future<SubmitStats?> solvedProblemCount({String? username}) async {
     assert(isInitialized, throw LeetCodeAPIException(100));
 
     return await fetchUserDetails<SubmitStats>(

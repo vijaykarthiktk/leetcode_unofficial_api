@@ -1,5 +1,5 @@
 name: leetcode_unofficial_api
-description: "A unofficial API of leetcode."
+description: "Unofficial LeetCode API: Level-up your coding practice with programmatic access to LeetCode data (problems, user stats, badges) & functionalities"
 version: 0.0.1
 repository: https://github.com/vijaykarthiktk/leetcode_unofficial_api
 issue_tracker: https://github.com/vijaykarthiktk/leetcode_unofficial_api/issues

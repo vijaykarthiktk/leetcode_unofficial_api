@@ -1,3 +1,12 @@
+<p align="center">
+  <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Flutter/flutter2.svg">
+  <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/Dart/dart2.svg">
+</p>
+<p align="center">
+  <img src="https://m3-markdown-badges.vercel.app/issues/8/3/vijaykarthiktk/leetcode_unofficial_api"> <img src="https://m3-markdown-badges.vercel.app/stars/8/3/vijaykarthiktk/leetcode_unofficial_api">
+</p>
+
+
 # LeetCode Unofficial API
 
 A Dart package providing an unofficial API for interacting with LeetCode. This package allows you to fetch user details, language statistics, user badges, recent submissions, solved problem counts, and more.
@@ -136,3 +145,6 @@ try {
 ### Contributing:
 
 We welcome contributions from the community! Feel free to submit pull requests with enhancements, bug fixes, or additional features.
+<p align="center">
+  <img src="https://ziadoua.github.io/m3-Markdown-Badges/badges/LicenceMIT/licencemit2.svg">
+</p>
